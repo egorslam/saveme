@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+@font-face {
+  font-family: "AvenirNext";
+  src: url("./fonts/AvenirNext/AvenirNext-Bold/AvenirNext-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("./fonts/AvenirNext/AvenirNext-Medium/AvenirNext-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("./fonts/AvenirNext/AvenirNext-MediumItalic/AvenirNext-MediumItalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 500;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lora', serif;
+  font-size: 17px;
+  line-height: 27px;
+  -webkit-font-smoothing: antialiased;
+  color: #262626;
+}
+
+h1, h2, h3, blockquote {
+  font-family: 'AvenirNext';
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: #303030;
+}
+
+.separator {
+  line-height: 0;
+  width: 30px;
+  margin: -3px auto 31px;
+}
+
+.separator span {
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  margin: 0 12px;
+  border-radius: 50%;
+  background-color: #909599;
+}
+
+.separator:before,
+.separator:after {
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  content: '';
+  border-radius: 50%;
+  background-color: #909599;
+}
+
+.section {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+}
+
+.nd-hero {
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.nd-hero img {
+  width: 100%;
+}
+
+.nd-title {
+  margin-bottom: 29px;
+}
+
+.nd-title h1 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+.nd-title .sub {
+  font-family: 'AvenirNext';
+  font-size: 14px;
+  line-height: 18px;
+  color: #909599;
+}
+
+.nd-ol-list h2 {
+  margin-bottom: 8px;
+}
+
+.nd-ul-list {
+  margin-bottom: 28px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 23px;
+  margin: 29px 0 5px;
+}
+
+ol {
+  padding-left: 18px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ol li, ul li {
+  margin-bottom: 20px;
+  padding-left: 12px;
+}
+
+ul li {
+  padding-left: 7px;
+}
+
+ol li:last-child, ul li:last-child {
+  margin-bottom: 0;
+}
+
+figure {
+  margin: 31px -20px 25px -52px;
+}
+
+figure img {
+  width: 100%;
+}
+
+figcaption {
+  font-family: 'AvenirNext';
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 8px;
+  padding: 0 20px;
+  color: #909599;
+}
+
+.nd-cite {
+  margin-top: 41px;
+  margin-bottom: 37px;
+}
+
+.nd-cite blockquote {
+  padding: 0 10px;
+}
+
+.nd-cite blockquote p {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 6px;
+  color: #2CA820;
+}
+
+.nd-cite blockquote cite {
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 19px;
+  color: #909599;
+}
+
+.get-app {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 21px;
+    line-height: 34px;
+    padding-top: 70px;
+  }
+  .section {
+    margin: 0 auto 40px;
+    padding: 0;
+  }
+  .nd-ol-list h2 {
+    margin-bottom: 15px;
+  }
+  .nd-cite {
+    margin: 0 auto 35px;
+  }
+  .separator {
+    margin: -5px auto 40px;
+  }
+  .nd-title h1 {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 10px;
+  }
+  .nd-hero {
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+  h3 {
+    font-size: 21px;
+    line-height: 28px;
+    margin-top: 30px;
+  }
+  ol li {
+    padding-left: 8px;
+  }
+  figure {
+    margin: 40px 0 35px -25px;
+  }
+  figcaption {
+    margin-top: 5px;
+    padding: 0;
+  }
+  .nd-cite blockquote {
+    padding: 0 40px;
+  }
+  .nd-cite blockquote p {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 1px;
+  }
+  .get-app {
+    display: block;
+    margin-top: 70px;
+    padding: 80px 0;
+    background-image: url(./img/get-app_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .get-app__inner {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 218px;
+  }
+  .get-app__inner:before {
+    position: absolute;
+    top: 0;
+    left: -2px;
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    content: '';
+    background-image: url(./img/get-app_logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .get-app__title {
+    margin-bottom: 10px;
+    padding-top: 2px;
+    color: #FFFFFF;
+  }
+  .get-app__text {
+    font-family: 'AvenirNext';
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: -25px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+  }
+  .get-app__btn {
+    display: inline-block;
+    width: 205px;
+    height: 60px;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 15px 30px rgba(0,0,0,.2);
+  }
+  .get-app__btn.ios {
+    background-image: url(./img/get-app_ios.svg);
+  }
+  .get-app__btn.android {
+    background-image: url(./img/get-app_android.svg);
+  }
+}
