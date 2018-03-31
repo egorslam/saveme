@@ -48,12 +48,17 @@ h1, h2, h3 {
 }
 
 .separator {
+  position: relative;
   line-height: 0;
-  width: 30px;
-  margin: -3px auto 31px;
+  width: 2px;
+  height: 2px;
+  /*margin: -3px auto 31px;*/
+  margin: 0 auto 31px;
+  border-radius: 50%;
+  background-color: #909599;
 }
 
-.separator span {
+/*.separator span {
   display: inline-block;
   width: 2px;
   height: 2px;
@@ -61,15 +66,25 @@ h1, h2, h3 {
   border-radius: 50%;
   background-color: #909599;
 }
-
+*/
 .separator:before,
 .separator:after {
+  position: absolute;
+  top: 0;
   display: inline-block;
   width: 2px;
   height: 2px;
   content: '';
   border-radius: 50%;
   background-color: #909599;
+}
+
+.separator:before {
+  left: -14px;
+}
+
+.separator:after {
+  right: -14px;
 }
 
 .section {
@@ -208,7 +223,8 @@ figcaption {
     margin: 0 auto 35px;
   }
   .separator {
-    margin: -5px auto 40px;
+    /*margin: -5px auto 40px;*/
+    margin: 0 auto 40px;
   }
   .nd-title h1 {
     font-size: 36px;
