@@ -38,7 +38,7 @@ body {
   color: #262626;
 }
 
-h1, h2, h3, blockquote {
+h1, h2, h3, .blockquote {
   font-family: 'AvenirNext';
 }
 
@@ -160,15 +160,15 @@ ol li:last-child, ul li:last-child {
   margin-bottom: 0;
 }
 
-figure {
+.figure {
   margin: 31px -20px 25px -52px;
 }
 
-figure img {
+.figure img {
   width: 100%;
 }
 
-figcaption {
+.figcaption {
   font-family: 'AvenirNext';
   font-size: 14px;
   line-height: 19px;
@@ -179,22 +179,22 @@ figcaption {
 
 .nd-cite {
   margin-top: 41px;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
 }
 
-.nd-cite blockquote {
+.nd-cite .blockquote {
   padding: 0 10px;
 }
 
-.nd-cite blockquote p {
+.nd-cite .blockquote p {
   font-size: 18px;
   font-weight: 500;
   font-style: italic;
-  margin-bottom: 6px;
+  margin-bottom: 11px;
   color: #2CA820;
 }
 
-.nd-cite blockquote cite {
+.nd-cite .blockquote .cite {
   font-weight: 500;
   font-size: 14px;
   font-style: normal;
@@ -247,20 +247,26 @@ figcaption {
   ol li {
     padding-left: 8px;
   }
-  figure {
+  .figure {
     margin: 40px 0 35px -25px;
   }
-  figcaption {
+  .figcaption {
     margin-top: 5px;
     padding: 0;
   }
-  .nd-cite blockquote {
+  .nd-cite {
+    margin-bottom: 35px;
+  }
+  .nd-cite .blockquote {
     padding: 0 40px;
   }
-  .nd-cite blockquote p {
+  .nd-cite .blockquote p {
     font-size: 28px;
     line-height: 35px;
-    margin-bottom: 1px;
+    margin-bottom: 4px;
+  }
+  .nd-cite .blockquote .cite {
+    line-height: 31px;
   }
   .get-app {
     display: block;
